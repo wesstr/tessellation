@@ -16,11 +16,11 @@ Basic tessellation implemented in OpenGL. This implementation uses a similar met
 ## Demo
 * Without wireframe
 
-![alt text](https://github.com/wesstr/tessellation/demo_imgs/tess.gif)
+![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess.gif)
 * With wireframe
 
-![alt text](https://github.com/wesstr/tessellation/demo_imgs/tess_w.gif)
+![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess_w.gif)
 
 * Some stupid subdivision amount. 100% GPU usage.
 
-![alt text](https://github.com/wesstr/tessellation/demo_imgs/tess-stupid.png)
+![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess-stupid.PNG)
