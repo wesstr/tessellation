@@ -1,0 +1,39 @@
+// Name: Wesley Strong
+// NetID: wfs51
+// Date: 12/1/17
+// Tessilation controller shader
+
+#version 410
+
+layout (vertices = 3) out;
+uniform float TessLevelInner;
+uniform float TessLevelOuter;
+
+in vec3 vPosition[];
+in vec3 vNormals[];
+in vec2 vTexcords[];
+in vec4 outColor[];
+
+out vec3 tcPosition[];
+out vec3 tcNormals[];
+out vec2 tcTexcords[];
+patch out vec4 tcColor;
+
+void main(void){
+if (gl_InvocationID == 0)
+    {
+        gl_TessLevelInner[0] = TessLevelInner;
+        gl_TessLevelOuter[0] = TessLevelOuter;
+        gl_TessLevelOuter[1] = TessLevelOuter;
+        gl_TessLevelOuter[2] = TessLevelOuter;
+    }
+
+	tcNormals[gl_InvocationID] = vNormals[gl_InvocationID];
+	tcTexcords[gl_InvocationID] = vTexcords[gl_InvocationID];
+	tcPosition[gl_InvocationID] = vPosition[gl_InvocationID];
+	tcColor = outColor[gl_InvocationID];
+
+    gl_out[gl_InvocationID].gl_Position =
+        gl_in[gl_InvocationID].gl_Position;
+}
+//
