@@ -61,3 +61,4 @@ FreeImage/** filter=lfs diff=lfs merge=lfs -text
 glew-1.13.0/** filter=lfs diff=lfs merge=lfs -text
 glm/** filter=lfs diff=lfs merge=lfs -text
 glfw-3.2.1/** filter=lfs diff=lfs merge=lfs -text
+demo_imgs/** filter=lfs diff=lfs merge=lfs -text
