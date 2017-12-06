@@ -11,16 +11,20 @@ Basic tessellation implemented in OpenGL. This implementation uses a similar met
 
 ## Compilation
 * Implemented using Visual Studio 2017 using static linking
-* To compile and run, clone repo, open Tessellation.sln, compile in Debug mode and run
+* In order to clone repo git lfs must be installed
+* To compile and run, clone repo, open Tessellation.sln, compile in Debug mode and run. Some additional configuration may be needed.
 
 ## Demo
-* Without wireframe
+Without wireframe. Notice that the specular highlights smoothen as the subdivision rate increases.
 
 ![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess.gif)
-* With wireframe
+
+With wireframe
 
 ![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess_w.gif)
 
-* Some stupid subdivision amount. 100% GPU usage.
+Some stupid subdivision amount. 100% GPU usage.
 
 ![alt text](https://github.com/wesstr/tessellation/blob/master/demo_imgs/tess-stupid.PNG)
+
+[Video Demonstration](https://youtu.be/x3179oPMrNs)
